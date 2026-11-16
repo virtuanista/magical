@@ -1,0 +1,21 @@
+{
+  "name": "magical",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --port 5180",
+    "build": "vite build",
+    "dev:movil": "vite --port 5180 --host"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "vite": "^6.4.6"
+  }
+}

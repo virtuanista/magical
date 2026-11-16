@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grimorio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="c"></canvas>
+
+  <div id="hud">
+    <div id="lesson"></div>
+    <div id="hint"></div>
+    <div id="toast"></div>
+  </div>
+
+  <div id="loading">
+    <div class="title">Grimorio</div>
+    <div class="sub">Cargando la cripta…</div>
+    <div class="bar"><i id="bar"></i></div>
+  </div>
+
+  <div id="start" class="hidden">
+    <div class="title">Grimorio</div>
+    <p>Sostienes un libro de hechizos. Lee la página, mantén pulsado el botón izquierdo del ratón y traza la runa en el aire con la mano derecha.</p>
+    <p class="keys">Mantén el clic y arrastra en el aire: trazar la runa<br>W A S D: caminar · clic derecho y arrastra (o Q / E): mirar alrededor<br>Clic en el borde de una página, rueda o ← / →: pasar página<br>M: silenciar · C: créditos</p>
+    <p class="keys">Con sonido: mejor con auriculares.</p>
+    <button id="go">Abrir el libro</button>
+    <button id="reset" class="link hidden">Empezar de cero</button>
+  </div>
+
+  <div id="credits" class="hidden">
+    <h3>Créditos</h3>
+    <div id="creditsBody"></div>
+    <p class="keys">C para cerrar</p>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

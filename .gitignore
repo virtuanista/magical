@@ -1,0 +1,12 @@
+node_modules/
+dist/
+release/
+.vite/
+.env
+.env.*
+*.log
+.claude/
+.mcp.json
+claude-cuentas.bat
+Thumbs.db
+desktop.ini
