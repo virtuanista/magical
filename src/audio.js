@@ -30,7 +30,7 @@ export class Sound {
 
   /** Descarga los sonidos durante la pantalla de carga (el AudioContext espera al clic). */
   prefetch() {
-    this.raw ??= Object.fromEntries(FILES.map((n) => [n, fetch(`/assets/audio/${n}.mp3`).then((r) => r.arrayBuffer())]));
+    this.raw ??= Object.fromEntries(FILES.map((n) => [n, fetch(`${import.meta.env.BASE_URL}assets/audio/${n}.mp3`).then((r) => r.arrayBuffer())]));
     return this.raw;
   }
 

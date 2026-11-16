@@ -102,7 +102,7 @@ function tex(url, srgb) {
 }
 const loadImage = (url) => new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = url; });
 
-const A = '/assets';
+const A = import.meta.env.BASE_URL + 'assets';
 const [envHdr, bgHdr, armsGltf, bookGltf, paperImage, tableGltf, candleGltf] = await Promise.all([
   hdrLoader.loadAsync(`${A}/hdri/cellar_2k.hdr`),
   // fondo: foto 8K de Poly Haven (versión JPG); la luz sale del HDR 2K
